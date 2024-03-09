@@ -1,0 +1,180 @@
+getgenv().Fate = {
+    ConfigVersion = "1.0.0a",
+    MainSettings = {
+        Notificaions = {
+            Enabled = true,
+            Duration = 3,
+            Mode = "poptart",
+            Webhook_URL = "",
+        },
+        InternalUi = {
+            Enabled = true,
+            Version = 1,
+            KeyBind = Enum.KeyCode.V,
+        },
+        Intro = true,
+    },
+    Global = {
+        WallCheck = true,
+        CrewCheck = false,
+        KOCheck = true,
+        AutoPredict = false,
+        Prediction = 0.155,
+        AntiGroundShot = false,
+        UnlockOnKO = false,
+    },
+    SilentAim = {
+        Enabled = true,
+        TargetBone = "Head",
+        AllowNotifications = true,
+        Keybind = false,
+        Key = "G",
+        HitChance = 100,
+        NearestCursorPoint = false,
+        HitPart_Mode = "Nearest Point",
+        DetectAntiAim = {
+            Enabled = false,
+            Min = -40,
+            Max = 40
+        }, 
+        Airshot = {
+            Enabled = true,
+            TargetBone = "LowerTorso",
+        }
+    },
+    CamLock = {
+        Enabled = true,
+        TargetBone = "Head",
+        AllowNotifications = true,
+        Key = "Q",
+        UseSmoothness = true,
+        Smoothness = 0.058,
+        DetectAntiAim = {
+            Enabled = true,
+            Min = -40,
+            Max = 40
+        }, 
+        EaseStyle = "Exponential",
+        JumpEase = true,
+        JumpEaseStyle = "Sine",
+        Shake = false, 
+        ShakeValue = 10,
+        Airshot = {
+            Enabled = true,
+            TargetBone = "LowerTorso",
+        }
+    },
+    FOV = {
+        Silent = {
+            Visible = false,
+            Filled = false,
+            Size = 150,
+            Transparency = 0.5,
+            Color = Color3.fromRGB(255, 255, 255),
+        },
+        CamLock = {
+            Visible = false,
+            Filled = false,
+            Size = 15,
+            Transparency = 0.5,
+            Color = Color3.fromRGB(255, 255, 255),
+        },
+    },
+    Resolver = {
+        AimViewBypass = false,
+        DesyncResolver = false,
+    },
+    GunFOV = {
+        Enabled = false,
+        Values = {
+            DoubleBarrel = 20,
+            Revolver = 25,
+            Rifle = 20,
+            Shotgun = 20,
+            Smg = 23,
+            TacticalShotgun = 24,
+            Silencer = 17,
+            AK47 = 8,
+            AR = 15
+        },
+    },
+    MemorySpoofer = {
+        Enabled = false,
+        Values = {
+            Minimum = 100,
+            Maximum = 200,
+        }
+    },
+    Macro = {
+        Enabled = true,
+        KeyBind = "X",
+        BypassMacroAbuse = true,
+        Speed = 1,
+    },
+    Emotes = {
+        Lay = true, LayKey = Enum.KeyCode.T,
+        Greet = true, GreetKey = Enum.KeyCode.G,
+        Speed = false, SpeedKey = Enum.KeyCode.N,
+        Sturdy = false, SturdyKey = Enum.KeyCode.H,
+        Griddy = false, GriddyKey = Enum.KeyCode.G,
+    },
+    Settings = {
+        AutoLowGFX = false,
+        DisableShadows = false,
+        MuteBoomBox = false,
+        AutoReload = false,
+        ShowStats = false,
+    },
+    Misc = {
+        Auto360 = {
+            Enabled = true,
+            SpinKeybind = "B",
+            SpinSpeed = 100,
+        },
+        FakeSpike = {
+            Enabled = true,
+            FakeSpikeKeybind = "K",
+            SpikeDuration = 1,
+        },
+    },
+    CustomAutoPrediction = {
+        Enabled = true,
+        Values = {
+            ping_20 = 0.102,
+            ping_40 = 0.125,
+            ping_50 = 0.155,
+            ping_60 = 0.132,
+            ping_70 = 0.136,
+            ping_80 = 0.130,
+            ping_90 = 0.136,
+            ping_105 = 0.138,
+            ping_110 = 0.146,
+            ping_125 = 0.149,
+            ping_130 = 0.151,
+            ping_150 = 0.162,
+            ping_175 = 0.172,
+            ping_200 = 0.185,
+            ping_225 = 0.198,
+            ping_250 = 0.206,
+            ping_275 = 0.214,  
+        }
+    },
+    ChatCommands = {
+        Enabled = true,
+        Prefix = "/",
+        Commands = {
+            Prediction = "pred",
+            ToggleFOV = "draw",
+            SizeFOV = "radius",
+            GotoLocation = "tp",
+            ToggleResolver = "resolver",
+            JoinDiscord = "discord",
+            RejoinServer = "rj",
+            ToggleSilentAim = "silent",
+            ToggleCamLock = "camlock",
+            CamLockSmoothness = "smoothness",
+            CheckForExploiters = "check",
+            ForceReset = "reset",
+        },
+    },
+}
